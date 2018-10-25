@@ -1,0 +1,21 @@
+package me.sumithpuri.github.tintin.rules.engine;
+
+// list any import classes here.
+import me.sumithpuri.github.tintin.rules.vo.SampleEvent;
+
+// use case 01
+// detect if we can blacklist a specific ip and port access
+rule "Port and IP Blacklist Rule"
+dialect "mvel"
+no-loop
+  when
+     $sampleEvent:SampleEvent(eventSourceIp=="216.39.58.18", eventSourcePort=="8080")  
+  then
+	 System.out.println("***** Blacklisted IP and Port Detected in Event with Remarks - " + $sampleEvent.getEventRemarks());
+end
+
+
+
+
+
+
