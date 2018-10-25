@@ -1,4 +1,4 @@
-# Tintin (Drools Expert 6.1.0)
+# Tintin (Drools Expert 6.1.x)
 Code Samples for the Blog Article [Introduction to Rules Engine Using Drools Expert 6.1.x] 
 <br>
 
