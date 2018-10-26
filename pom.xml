@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>tintin : sample-rules-engine</name>
+	<name>Tintin : Sample Rules Engine Using Drools Expert 6.1.x</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -89,4 +89,5 @@
 		</plugin>
 	</plugins>
 	</build>
+	<description>Code Samples for the Blog Article [Rules Engine using Drools Expert 6.1.x] </description>
 </project>
