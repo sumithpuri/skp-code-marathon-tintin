@@ -75,6 +75,24 @@ public class SampleRulesEngine {
 			System.out.println("Received a Sample Event / Firing the Rules Engine Service...");
 			kSession.insert(event);
 			kSession.fireAllRules();
+			
+			// TODO FIXME XXX
+			// remember that this entire codebase demonstrates all aspects of drools
+			// rules (drools expert) and drools cep (drools fusion) - also there is
+			// a starting point to create the multi-threaded data loader. all is fine
+			// except that the correct way to use drools is to continuously fire the
+			// drools runtime using the following code, but make sure that the data
+			// loader is running as a separate thread
+			//
+			// uncomment the below, once you have separate multi-threaded data loader 
+			/*
+			 * new Thread() {
+			        @Override
+			        public void run() {
+			            kieSession.fireUntilHalt();
+			        }
+			    }.start();
+			 */
 			System.out.println("Finished Running through all the the Rules in the Engine...");
 	}
 }
